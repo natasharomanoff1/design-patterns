@@ -1,0 +1,14 @@
+package com.dr.designpatterns.structural.bridge;
+
+abstract class Shape {
+
+	protected Renderer renderer;
+
+	public Shape(Renderer renderer) {
+		super();
+		this.renderer = renderer;
+	}
+
+	public abstract void draw();
+	public abstract void resize(float factor);
+}
